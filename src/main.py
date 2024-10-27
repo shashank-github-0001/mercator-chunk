@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.post("/")
 async def main(full_string: str) -> Dict[str, str]:
-    max_tokens = 50
+    max_tokens = 500
     tokenizer = Tokenizer.from_pretrained("bert-base-uncased")
     splitter = TextSplitter.from_huggingface_tokenizer(tokenizer, max_tokens)
     chunks = splitter.chunks(full_string)
