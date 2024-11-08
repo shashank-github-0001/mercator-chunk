@@ -1,2 +1,8 @@
-# things i need to do
+```
+npm install
+npm run dev
+```
 
+```
+npm run deploy
+```
